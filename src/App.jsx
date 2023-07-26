@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Footer from './components/Footer';
+import Nav from './components/Nav'
 
 const App = () => {
   return (
-    <div>Karbala .</div>
+ <>
+<Nav/>
+<Footer/>
+ </>
+
   )
 }
 
