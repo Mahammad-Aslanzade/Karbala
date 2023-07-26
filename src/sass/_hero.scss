@@ -1,0 +1,114 @@
+.hero-section{
+    padding: 10vh 0;
+    background-color: #000;
+    position: relative;
+    .trace{
+        position: absolute;
+        width: 40%;
+        height: 80%;
+        left: 40%;
+    }
+    .hero-section-container{
+        font-family: 'Inter';
+        //
+        .head{
+            text-align: center;
+            h2{
+                text-transform: uppercase;
+                color: #fff ;
+                span{
+                    color: #FF2828;
+                }
+            }
+        }
+        //
+        .main-part{
+            padding: 1vh 0;
+            .row{
+                margin: 0;
+                align-items: center;
+                .hero-left-part{
+                    // background-color: red;
+                    position: relative;
+                    .images-main{
+                        padding: 0 0 35% 0;
+                        width: 38%;
+                        .flag-green{
+                            width: 38%;
+                            position: absolute;
+                            left: 35%;
+                            top: 13%;
+                        }
+                        .interrior-img{
+                            width: 100%;
+                            z-index: 3;
+                        }
+                        .flag-black{
+                            position: absolute;
+                            width: 45%;
+                            z-index: 2;
+                            top: 65%;
+                        }
+                    }
+                    @media (max-width:998px) {
+                        .images-main{
+                            .flag-green{
+                                left: 55%;
+                            }
+                        }
+                    }
+                }
+                .hero-right-part{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 5vh 5vh;
+                    // background-color: aqua;
+                    .text-box-frame{
+                        width: 80%;
+                        // background-color: red;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        p{
+                            padding: 3.4vh;
+                            width: 90%;
+                            color: #fff;
+                        }
+                        .text-frame{
+                            position: absolute;
+                            width: 120%;
+                            height: 100%;
+                        }
+                        @media (max-width:450px) {
+                            width: 100%;
+                            .text-frame{
+                                display: none;
+                            }
+                            p{
+                                width: 100%;
+                                padding: 1vh 1vh;
+                                border: 5px double #fff;
+                            }
+                        }
+                    }
+                    // Read More Button
+                    button{
+                            z-index: 2;
+                            margin: 3vh 0 0 0;
+                            padding: 5px 15px;
+                            background-color: #FF2828;
+                            color: #fff;
+                            border: none;
+                            border-radius: 10px;
+                            transition: 0.8s;
+                            &:hover{
+                                background-color: #1c1c1c;
+                                color: #FF2828;
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
