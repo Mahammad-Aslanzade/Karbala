@@ -1,0 +1,110 @@
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #202020;
+    .footerbg{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 230px !important;
+            width: 90%;
+            height: 1px;
+            border-radius: 50%;
+            background-color: #ce3333;
+            text-align: center !important;
+            margin-left: 5%;
+        }
+      .txt{
+        display: flex ;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+   
+        p{
+            margin: 40px;
+            font-weight: bold;
+            font-size: medium;
+            transition: 250ms;
+            color: #fff;
+            position: relative;
+            &:before{
+                position: absolute;
+                content: "";
+                bottom: -2px;
+                width: 0%;
+                height: 2px;
+                background-color: #792323;
+                transition: 150ms;
+            }
+            &:after{
+                position: absolute;
+                content: "";
+                bottom: -4px;
+                right: -3px;
+                width: 0px;
+                height: 8px;
+                border-radius: 20%;
+                background-color: #792323;
+                transform: rotate(240deg);
+                transition: 150ms;
+            }
+            &:hover::after{
+                width: 8px;
+                transform:rotate(0deg);
+            }
+            &:hover::before{
+                width: 100%;
+            }
+            &:hover{
+                cursor: pointer;
+                color: red;
+            }
+        }
+
+      }
+        .img1{
+            position: absolute;
+            top: 0;
+            width: 190px;
+        }
+        .img2{
+            margin-right: 55px;
+        }
+        img{
+            width: 220px;
+        }
+        .copyright{
+            color: #fff;
+            text-align: center;
+            padding-bottom: 40px;
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .footer{
+        .footerbg{
+            .txt{
+                flex-wrap: wrap;
+                p{
+                      margin: 10px;
+                     text-align: start;
+                     font-size: medium;
+                }
+            }
+            .copyright{
+                font-size: small;
+                a{
+                    font-size: small;
+                }
+            }
+        }
+    }
+}
