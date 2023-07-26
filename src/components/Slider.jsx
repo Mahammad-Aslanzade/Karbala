@@ -31,16 +31,25 @@ export default function App() {
             >
                 <SwiperSlide id='banner-is'>
                     <img src={Banner_1} className='img-fluid' alt="" />
+                    <div className='divbox'>
                     <h1 className='text-uppercase fw-bold'>Karbala</h1>
+
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide id='banner-is'>
                     <img src={Banner_1} className='img-fluid' alt="" />
+                    <div className='divbox'>
                     <h1 className='text-uppercase fw-bold'>Karbala</h1>
+
+                    </div>
                 </SwiperSlide>
            
                 <SwiperSlide id='banner-is'>
                     <img src={Banner_1} className='img-fluid' alt="" />
+                    <div className='divbox'>
                     <h1 className='text-uppercase fw-bold'>Karbala</h1>
+
+                    </div>
                 </SwiperSlide>
            
             </Swiper>
