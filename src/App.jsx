@@ -1,9 +1,12 @@
 import React from 'react';
 import Nav from './components/Nav'
+import Slider from './components/Slider';
 
 const App = () => {
   return (
-    <div><Nav/></div>
+    <div><Nav/>
+    <Slider/>
+    </div>
   )
 }
 
