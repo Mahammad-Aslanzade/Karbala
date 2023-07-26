@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import Nav from './components/Nav'
 
 const App = () => {
   return (
-    <div>Karbala</div>
+    <div><Nav/></div>
   )
 }
 
