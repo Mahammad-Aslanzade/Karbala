@@ -93,11 +93,12 @@
                         }
                     }
                     // Read More Button
-                    button{
+                    #read_more{
                             z-index: 2;
                             margin: 3vh 0 0 0;
                             padding: 5px 15px;
                             background-color: #FF2828;
+                            text-decoration: none;
                             color: #fff;
                             border: none;
                             border-radius: 10px;
