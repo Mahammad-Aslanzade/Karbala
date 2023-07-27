@@ -1,21 +1,20 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next';
-import Banner_1 from '../assets/banner_2.jpeg'
+import banner1 from '../assets/banner_1.png'
 const Karbala = () => {
-  const {t} = useTranslation();
     return (
         <div className='container karbala'>
             <div className="page-head mt-5">
 
                 <div className="text-box">
-                    <h2>{t('karbala.1')}</h2>
-                    <img src={Banner_1} alt="" />
+                    <h2>Karbala</h2>
+                    <img src="https://i0.wp.com/sapelosquare.com/wp-content/uploads/2017/10/tumblr_nwzmo79gwp1qkkfszo1_1280.jpg?resize=1200%2C580&ssl=1" alt="" />
                 </div>
             </div>
 
             <div className="main-part">
-          <h3>Kərbəla Haqqında</h3>
-          <p>
+                <h3>Kərbala Haqqında</h3>
+
+                <p>
                     Kərbəla vaqiəsi (ərəbcə: واقعة الطف) və yaxud Kərbəla hadisəsi, İmam Hüseynlə (ə) əshabının, Küfə qoşunu ilə döyüşüdür. Kərbəla vaqiəsi hicrətin 61-ci ili Məhərrəm ayının 10-u, imam Hüseynin (ə), Yezid ibn Müaviyə ilə beyət etmədiyi üçün baş vermiş hadisədir, Kərbəla hadisəsi imam Hüseynin (ə) və səhabəsinin şəhadəti və əhli-beytinin əsir düşməsilə nəticələnmişdir.
 
                     Kərbəla vaqiəsi, islam tarixinin ən ağır hadisəsi sayılır; odur ki, şiələr ən böyük və möhtəşəm əzadarlıq mərasimlərini məhz bu hadəsin ildönünmündə qeyd edirlər.
@@ -40,6 +39,8 @@ const Karbala = () => {
                     <br />
                     İmam Hüseyn (ə) öz yaxınlarından ibarət 30 nəfərlə birlikd,[10] Mədinənin Darul-imarə adlanan saraya getdi.[11] Vəlid, Müaviyənin ölüm xəbərini həzrətə verdikdən sonra, Yezidin məktubunu onun üçün oxudu ki, o məktubda Vəliddən istənilmişdi, Hüseyn ibn Əlidən (ə) beyət alınsın. İmam Hüseyn (ə) Vəlidə dedi: “Güman edirəm məqsədin budur ki, mənim beyətim camaat qarşısında olsun.”Vəlid cavab verdi: “Mənim fikrim budur.”[12] İmam (ə) buyurdu: “Belədirsə, sabaha kimi mənə fürsət ver, öz fikrimi bildirim.”[13] Mədinənin hakimi, sabahı gün, əsr vaxtı, öz məmurlarını, imam Hüseynin (ə) evinə göndərdi ki, cavab alsın.[14] İmam Hüseyn (ə) Vəlidin razılığı əsasında o gecəni də möhlət aldı.[15] Bu möhlətdən sonra, imam (ə) bu qərara gəldi ki, Mədinəni tərk etsin.[16]
                 </p>
+
+
             </div>
         </div>
     )

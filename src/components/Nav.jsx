@@ -51,7 +51,7 @@ const Nav = () => {
                         <div className='d-flex align-items-center live_box-is'> 
                                 <MdLiveTv className=' fs-3' style={{color:"red"}} />
 
-                                <NavLink to="#" className=  {` text-decoration-none mt-1 ms-2 ${({isActive}) => (isActive ? "active" : 'none')} `} id='live_link-is'>{t('nav.4')}</NavLink>
+                                <NavLink to="/liveStream" className=  {` text-decoration-none mt-1 ms-2 ${({isActive}) => (isActive ? "active" : 'none')} `} id='live_link-is'>{t('nav.4')}</NavLink>
                         </div>
                         <div className="d-flex mt-3 lang" style={{"transform":"translateX(30px)"}}>
                         <p style={{"color":"#fff","cursor":"pointer"}} className={` ${localStorage.getItem('i18nextLng') == 'az' ? "active" : ""}`} onClick={()=>{setClick(1)

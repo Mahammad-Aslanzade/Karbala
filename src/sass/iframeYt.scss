@@ -1,0 +1,19 @@
+.youtube-frame-section{
+    width: 100%;
+    height: 100;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    justify-content: center;
+    .youtube-frame-body{
+        width: 85%;
+        font-family: 'Inter';
+        h1{
+            text-align: center;
+            padding: 10vh 0;
+            color: #FF2828;
+        }        
+        iframe{
+            width: 100%;
+            height: 90vh;
+        }
+    }
+}

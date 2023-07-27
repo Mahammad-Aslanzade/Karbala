@@ -7,7 +7,7 @@ import AhlalBayt from '../pages/AhlalBayt';
 import Karbala from '../pages/Karbala';
 import Ashura from '../pages/Ashura';
 import ImamHussein from '../pages/ImamHussein';
-
+import LiveStream from "../components/LiveStream"
 const AppRouter = () => {
     return (
         <BrowserRouter>
@@ -18,6 +18,7 @@ const AppRouter = () => {
                 <Route path='/ahlalbayt' element={<AhlalBayt />} />
                 <Route path='/karbala' element={<Karbala />} />
                 <Route path='/ashura' element={<Ashura/>} />
+                <Route path='/liveStream' element={<LiveStream/>} />
             </Routes>
             <Footer />
         </BrowserRouter>

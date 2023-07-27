@@ -5,6 +5,8 @@
 @import 'slider';
 @import 'hero';
 @import "footer";
+@import "iframeYt" ;
+@import "karbala" ;
 
 body {
     background-color: #202020;
@@ -51,3 +53,7 @@ body {
     align-items: center;
     height: 100vh;
   }
+  p::selection{
+    background: #7c0303 !important;
+    color: #fff !important;
+}
