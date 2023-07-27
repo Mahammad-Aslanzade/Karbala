@@ -19,10 +19,11 @@ nav {
     }
 
     .live_box-is {
+        cursor: pointer;
         #live_link-is {
             color: #fff;
 
-
+            margin: 0;
             &:hover {
                 color: red;
             }
