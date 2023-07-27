@@ -11,8 +11,10 @@ import Banner_1 from '../assets/banner_1.png'
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { useTranslation } from 'react-i18next';
 
 export default function App() {
+    const {t} = useTranslation();
     return (
         <>
             <Swiper
@@ -31,16 +33,16 @@ export default function App() {
             >
                 <SwiperSlide id='banner-is'>
                     <img src={Banner_1} className='img-fluid' alt="" />
-                    <h1 className='text-uppercase fw-bold'>Karbala</h1>
+                    <h1 className='text-uppercase fw-bold'>{t('nav.0')} </h1>
                 </SwiperSlide>
                 <SwiperSlide id='banner-is'>
                     <img src={Banner_1} className='img-fluid' alt="" />
-                    <h1 className='text-uppercase fw-bold'>Karbala</h1>
+                    <h1 className='text-uppercase fw-bold'>{t('nav.2')} </h1>
                 </SwiperSlide>
            
                 <SwiperSlide id='banner-is'>
                     <img src={Banner_1} className='img-fluid' alt="" />
-                    <h1 className='text-uppercase fw-bold'>Karbala</h1>
+                    <h1 className='text-uppercase fw-bold'>{t('nav.3')} </h1>
                 </SwiperSlide>
            
             </Swiper>

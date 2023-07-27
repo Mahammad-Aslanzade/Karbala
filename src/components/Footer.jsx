@@ -1,7 +1,9 @@
 import React from 'react' ;
 import footerbg from "../assets/footerbg.png"
 import footerimg from "../assets/footerimg.png"
+import { useTranslation } from 'react-i18next';
 const Footer = () => {
+  const {t} = useTranslation();
   return (
   <>
   <section className="footer">
@@ -13,16 +15,16 @@ const Footer = () => {
   <img src={footerimg} alt="" className="img-fluid img1 mt-3" />
 
 <div className="txt mt-3">
-    <p>İmam Hüseyn </p>
-    <p>Əhli Beyt</p>
-    <p>Kərbəla</p>
-    <p>Aşura</p>
+    <p>  {t('nav.0')} </p>
+    <p>  {t('nav.1')}</p>
+    <p>  {t('nav.2')}</p>
+    <p>  {t('nav.3')}</p>
 </div>
 
   </div>
   <p  className="copyright">
-    Copyright © 2023 <a href="#react">Webluna LLC</a> .
-    Bütün hüquqlar qorunur
+  {t('nav.8')} © 2023 <a href="#react">Webluna LLC</a> .
+  {t('nav.9')}
   </p>
     </div>
   </section>
