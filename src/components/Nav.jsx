@@ -21,7 +21,7 @@ const Nav = () => {
 
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li className="nav-item ">
-                                <NavLink className={`nav-link page_title-is ${({isActive}) => (isActive ? "active" : 'none')}`} aria-current="page" to="/">İmam Hüseyn </NavLink>
+                                <NavLink className={`nav-link page_title-is ${({isActive}) => (isActive ? "active" : 'none')}`} aria-current="page" to="/imamhussein">İmam Hüseyn </NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink to="/ahlalbayt" className={`nav-link page_title-is ${({isActive}) => (isActive ? "active" : 'none')}`}>  Əhli Beyt  </NavLink>

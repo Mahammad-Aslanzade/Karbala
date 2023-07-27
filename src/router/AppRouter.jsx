@@ -6,6 +6,7 @@ import Home from '../pages/Home';
 import AhlalBayt from '../pages/AhlalBayt';
 import Karbala from '../pages/Karbala';
 import Ashura from '../pages/Ashura';
+import ImamHussein from '../pages/ImamHussein';
 
 const AppRouter = () => {
     return (
@@ -13,6 +14,7 @@ const AppRouter = () => {
             <Nav />
             <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='/imamhussein' element={<ImamHussein/>} />
                 <Route path='/ahlalbayt' element={<AhlalBayt />} />
                 <Route path='/karbala' element={<Karbala />} />
                 <Route path='/ashura' element={<Ashura/>} />
