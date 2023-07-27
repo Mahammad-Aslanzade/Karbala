@@ -1,18 +1,18 @@
 import React from 'react';
 import Footer from './components/Footer';
 import Nav from './components/Nav'
-import Slider from './components/Slider';
-import HeroSection from './components/HeroSection';
+
+import AppRouter from './router/AppRouter';
 
 const App = () => {
   return (
-   
-<>
-<Nav/>
-    <Slider/>
-    <HeroSection />
-    <Footer/>
-</>
+
+    <>
+      {/* <Nav />
+      
+      <Footer /> */}
+      <AppRouter/>
+    </>
 
   )
 }

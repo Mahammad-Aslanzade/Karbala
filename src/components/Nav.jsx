@@ -3,15 +3,16 @@ import Logo from '../assets/logo.png';
 import Blood_1 from "../assets/pngwing 2.png";
 import Blood_2 from "../assets/pngwing 1.png";
 import { MdLiveTv } from 'react-icons/md';
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark p-0">
                 <div className="container">
-                    <a className="navbar-brand p-0" href="#">
+                    <NavLink className="navbar-brand p-0" to="/">
                         <img src={Logo} alt="" style={{ height: "70px" }} />
-                    </a>
+                    </NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
                     </button>
@@ -20,24 +21,23 @@ const Nav = () => {
 
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li className="nav-item ">
-                                <a className="nav-link active page_title-is " aria-current="page" href="#">İmam Hüseyn </a>
+                                <NavLink className={`nav-link page_title-is ${({isActive}) => (isActive ? "active" : 'none')}`} aria-current="page" to="/">İmam Hüseyn </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link  page_title-is" href="#">  Əhli Beyt  </a>
+                                <NavLink to="/ahlalbayt" className={`nav-link page_title-is ${({isActive}) => (isActive ? "active" : 'none')}`}>  Əhli Beyt  </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link page_title-is" href="#">   Kərbəla    </a>
+                                <NavLink className={`nav-link page_title-is ${({isActive}) => (isActive ? "active" : 'none')}`} to="/karbala">   Kərbəla    </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link page_title-is" href="#">   Aşura  </a>
+                                <NavLink className={`nav-link page_title-is ${({isActive}) => (isActive ? "active" : 'none')}`} to="/ashura">   Aşura  </NavLink>
                             </li>
 
                         </ul>
                         <img src={Blood_2} className='mx-3 me-4' alt="" id='blood_2-is' style={{ height: "70px" }} />
                         <div className='d-flex align-items-center live_box-is'> 
                                 <MdLiveTv className=' fs-3' style={{color:"red"}} />
-                                <a href="#" className=' text-decoration-none mt-1 ms-2' id='live_link-is'>Kərbəla Canlı</a>
-                            
+                                <NavLink to="#" className=  {` text-decoration-none mt-1 ms-2 ${({isActive}) => (isActive ? "active" : 'none')} `} id='live_link-is'>Kərbəla Canlı</NavLink>
                         </div>
                     </div>
                 </div>
