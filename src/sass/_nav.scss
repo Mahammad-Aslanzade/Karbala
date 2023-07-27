@@ -35,15 +35,23 @@ nav {
 
     #blood_2-is {
         @media (max-width:1022px) {
-            position: absolute;
-            right: 0;
-            bottom: 40px;
-            z-index: 1;
+           display: none;
         }
     }
 }
 
-
+html {
+    overflow-x: hidden !important;
+}
 .active {
     color: red !important;
+}
+
+@media (max-width:768px){
+    .navbar{
+        .lang{
+            transform: translateX(0) !important;
+        }
+        
+    }
 }

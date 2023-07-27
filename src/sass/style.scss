@@ -7,10 +7,30 @@
 @import "footer";
 
 body {
-    background-color: #000;
+    background-color: #202020;
     font-family: 'Inter', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
 
 .page_hero-is {
     img {
@@ -25,3 +45,9 @@ body {
         }
     }
 }
+  .loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
