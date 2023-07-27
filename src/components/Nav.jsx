@@ -1,28 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Logo from '../assets/logo.png';
 import Blood_1 from "../assets/pngwing 2.png";
 import Blood_2 from "../assets/pngwing 1.png";
 import { MdLiveTv } from 'react-icons/md';
+import { LinkContainer } from 'react-router-bootstrap';
 
 const Nav = () => {
-    const [ytFrame, setYtFrame] = useState(false);
 
     return (
         <div>
-            
-            {/* YOUTUBE LIVE FRAME  START */}
-            <section className={`youtube-frame-section d-${ytFrame ? 'flex' : 'none'}`}>
-                <div className="youtube-frame-body">
-                    {ytFrame ? <iframe className={`d-${ytFrame ? 'flex' : 'none'}`}src="https://www.youtube.com/embed/YrakZaw0dYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen /> : '' }
-                </div>
-
-                <button className='frame-close-btn'>
-                    <i className="fa-regular fa-circle-xmark" onClick={() => setYtFrame(false)}></i>
-                </button>
-            </section>
-            {/* YOUTUBE LIVE FRAME  END */}
-
-
             <nav className="navbar navbar-expand-lg navbar-dark p-0">
                 <div className="container">
                     <a className="navbar-brand p-0" href="#">
@@ -52,11 +38,14 @@ const Nav = () => {
                         <img src={Blood_2} className='mx-3 me-4' alt="" id='blood_2-is' style={{ height: "70px" }} />
 
 
-                        <div className='d-flex align-items-center live_box-is' onClick={() => setYtFrame(true)}>
-                            <MdLiveTv className=' fs-3' style={{ color: "red" }} />
-                            <p className=' text-decoration-none mt-1 ms-2' id='live_link-is'>Kərbəla Canlı</p>
+                        <LinkContainer to='/liveStream'>
+                            <div className='d-flex align-items-center live_box-is'>
+                                <MdLiveTv className=' fs-3' style={{ color: "red" }} />
+                                <p className=' text-decoration-none mt-1 ms-2' id='live_link-is'>Kərbəla Canlı</p>
 
-                        </div>
+                            </div>
+                        </LinkContainer>
+                        
                     </div>
                 </div>
             </nav>

@@ -1,38 +1,19 @@
 .youtube-frame-section{
-    position: absolute;
     width: 100%;
     height: 100;
-    padding: 5vh 0;
-    top: 0;
-    z-index: 2;
     background-color: rgba($color: #000000, $alpha: 0.6);
     justify-content: center;
     .youtube-frame-body{
         width: 85%;
-        height: 100%;
-        // background-color: red;
+        font-family: 'Inter';
+        h1{
+            text-align: center;
+            padding: 10vh 0;
+            color: #FF2828;
+        }        
         iframe{
             width: 100%;
             height: 90vh;
-        }
-    }
-    button{
-        position: absolute;
-        right: 1vh;
-        top: 1vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 35px;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: none;
-        background-color: red;
-        color: #000000;
-        i{
-            margin: 0;
-            padding: 0;
         }
     }
 }
